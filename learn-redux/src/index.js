@@ -30,6 +30,7 @@ const counter = (state = 0, action) => {
       return state + 1;
     case 'DECREMENT':
       return state - 1;
+    default:
   }
 };
 
@@ -40,6 +41,9 @@ store.subscribe(() => console.log(store.getState()));
 
 //Dispatch -- Execute action to reducer... dispatch action to reducer
 store.dispatch(increment());
+store.dispatch(decrement());
+store.dispatch(decrement());
+store.dispatch(decrement());
 
 ReactDOM.render( <App />, document.getElementById('root'));
 
