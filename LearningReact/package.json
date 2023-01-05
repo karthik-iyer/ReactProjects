@@ -4,8 +4,8 @@
   "description": "Learning React",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development --open --hot",
-    "build": "webpack --mode production"
+    "start": "node init && webpack-dev-server --mode development --open --hot",
+    "build": "node init && webpack --mode production"
   },
   "author": "",
   "license": "ISC",
